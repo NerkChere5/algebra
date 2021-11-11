@@ -1,0 +1,99 @@
+* {
+  color: #fff;
+  font-family: Font;
+  font-size: 16px;
+  position: relative;
+  user-select: none;
+}
+
+@font-face {
+ font-family: Font;
+ src: url('./media/font.ttf');
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.screen {
+  background: url('./media/background.png');
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-items: center;
+}
+
+.firstScreen, .secondScreen {
+  align-items: center;
+  display: grid;
+  justify-items: center;
+  margin: auto;
+}
+
+.screen_title {
+  font-size: 54px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.screen_textContent_cavity {
+  height: 50px;
+}
+
+.screen_textContent {
+  font-size: 26px;
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.screen_textContent li{
+  font-size: 29px;
+}
+
+.next {
+  border: 18px solid transparent;
+  border-top: 22px solid #fff;
+}
+
+.prev {
+  border: 18px solid transparent;
+  border-bottom: 22px solid #fff;
+}
+
+.next:hover {
+  cursor: pointer;
+  border: 18px solid transparent;
+  border-top: 22px solid #eee;
+}
+
+.prev:hover {
+  cursor: pointer;
+  border: 18px solid transparent;
+  border-bottom: 22px solid #eee;
+}
+
+.next:active {
+  border: 18px solid transparent;
+  border-top: 22px solid #ccc;
+}
+
+.prev:active {
+  border: 18px solid transparent;
+  border-bottom: 22px solid #ccc;
+}
+
+.rule {
+  cursor: pointer;
+}
+
+
+.popup {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  background: #0008;
+  z-index: 1;
+}
