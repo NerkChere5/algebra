@@ -1,0 +1,41 @@
+:host {
+  box-sizing: border-box;
+  display: contents;
+  height: 100%;
+  width: 100%;
+}
+
+
+x_popup {
+  all: inherit;
+  
+  background: #0008;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  left: 0;
+  overflow: hidden;
+  padding: 50px;
+  position: fixed;
+  top: 0;
+}
+
+x_popup[visible='false'] {
+  display: none;
+}
+
+
+.button {
+  align-self: center;
+  background: #fff;
+  padding: 20px;
+  user-select: none;
+}
+
+
+.display {
+  align-self: stretch;
+  background: #fff;
+  display: block;
+  padding: 50px;
+}
