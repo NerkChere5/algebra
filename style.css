@@ -96,4 +96,5 @@ body {
   width: 100vw;
   background: #0008;
   z-index: 1;
+  position: absolute;
 }
