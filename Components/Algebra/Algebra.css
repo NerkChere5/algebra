@@ -1,0 +1,36 @@
+:host {
+  display: contents;
+  height: 100%;
+}
+
+
+
+/* x_algebra {
+  background: #0f02;
+} */
+
+c-slider {
+  background: url('../../Media/background.jpg');
+  height: 100%;
+  user-select: none;
+}
+
+c-screen {
+  font-family: Font;
+  color: #fff;
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+c-popup {
+  color: #000;
+}
+
+[popup_link] {
+  cursor: pointer;
+}
+
+[popup_link]:hover {
+  color: #ddd;
+}

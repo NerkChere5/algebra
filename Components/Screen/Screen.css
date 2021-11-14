@@ -1,3 +1,8 @@
+@font-face {
+ font-family: 'Font';
+ src: url('../../Media/font.ttf');
+}
+
 :host {
   display: contents;
   height: 100%;
@@ -5,4 +10,13 @@
 
 
 
+.head {
+  font: 48px 'Font';
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.content {
+  font: 24px 'Font';
+}
 

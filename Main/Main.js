@@ -1,6 +1,1 @@
-import '../Components/Popup/Popup.js';
-import '../Components/Screen/Screen.js';
-
-
-
-
+import '../Components/Algebra/Algebra.js';

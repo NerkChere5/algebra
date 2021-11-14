@@ -27,15 +27,24 @@ x_popup[visible='false'] {
 
 .button {
   align-self: center;
-  background: #fff;
+  background: seaGreen;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  font: 16px 'Arial Black';
   padding: 20px;
   user-select: none;
+}
+
+.button:hover {
+  background: #3CB371;
 }
 
 
 .display {
   align-self: stretch;
-  background: #fff;
+  background: #eee;
   display: block;
-  padding: 50px;
+  padding: 25px;
+  border-radius: 20px;
 }
