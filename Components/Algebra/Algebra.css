@@ -29,3 +29,15 @@ c-popup {
 [popup_link]:hover {
   color: #ddd;
 }
+
+table {
+  border: 1px solid #fff;
+}
+
+th {
+  border: 1px solid #fff;
+}
+
+td {
+  border: 1px solid #fff;
+}
