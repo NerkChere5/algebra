@@ -1,19 +1,28 @@
-
-
 :host {
   display: contents;
   height: 100%;
 }
 
 
-
-.head {
-  font-size: 48px;
-  font-weight: 900;
-  margin-bottom: 20px;
+x_screen {
+  all: inherit;
+  display: grid;
+  grid-template: auto auto / auto;
+  justify-items: center;
+  text-align: center;
 }
+
 
 .content {
+  display: block;
   font-size: 24px;
+  text-align: center;
 }
 
+.head {
+  align-self: center;
+  display: block;
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}

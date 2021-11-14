@@ -43,12 +43,34 @@
           <li>Разность кубов: (a-b)(a<sup>2</sup>+ab+b<sup>2</sup>)=a<sup>3</sup>−b<sup>3</sup></li>
         </ol>
       </c-popup>
-
     </c-screen>
     
+    <c-screen>
+      <div slot='head'>Путешествие начинается!</div>
+      <img slot='content' src='./Media/Road.png'>
+    </c-screen>
     
+    <c-screen>
+      <div slot='head'>Остановка 1. Разминка</div>
+      
+      <div slot='content'>Для начала давайте потренируемся и решим не очень сложные задания.</div>
+      <div slot='content'>Упростите выражение:</div>
+      <img slot='content' src='./Media/task1.png'>
+     <!--  <div slot='content'>Попробуйте теперь сами</div>
+      <img slot='content' src='./Media/task2.png'>
+      <input slot='content' class='task2'><button slot='content' class='button2'>Проверить!</button><span slot='content' class='answer2' style='color: green;' hidden>Всё верно</span> -->
+      <div slot='content' popup_link='popup_1'>Интересные факты про рациональные дроби</div>
+      
+      <c-popup slot='popups' popup_name='popup_1'>
+        <iframe width="709" height="399" src="https://www.youtube.com/embed/qvRk8Y1yHJI" title="YouTube video player" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </c-popup>
+    </c-screen>
     
-    
+    <c-screen>
+      <div slot='head'>Остановка 2. Тренировка</div>
+    </c-screen>
+     <div slot='content'>Для того, чтобы лучше решать задачи необходимо ещё потренироваться.</div>
+     <div slot='content'>Найдите значение выражения:</div>
     
   </c-slider>
 </x_algebra>
