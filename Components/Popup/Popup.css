@@ -47,4 +47,5 @@ x_popup[visible='false'] {
   display: block;
   padding: 25px;
   border-radius: 20px;
+  user-select: text;
 }

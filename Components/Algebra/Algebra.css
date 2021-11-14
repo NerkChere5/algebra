@@ -28,6 +28,7 @@ c-screen {
 
 c-popup {
   color: #000;
+  z-index: 1;
 }
 
 [popup_link] {
