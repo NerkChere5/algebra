@@ -3,7 +3,10 @@
   height: 100%;
 }
 
-
+@font-face {
+ font-family: 'Font';
+ src: url('../../Media/font.ttf');
+}
 
 /* x_algebra {
   background: #0f02;
@@ -16,7 +19,7 @@ c-slider {
 }
 
 c-screen {
-  font-family: Font;
+  font-family: 'Font';
   color: #fff;
   display: grid;
   align-items: center;
