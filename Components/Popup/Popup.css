@@ -14,7 +14,6 @@ x_popup {
   flex-direction: column;
   gap: 50px;
   left: 0;
-  overflow: hidden;
   padding: 50px;
   position: fixed;
   top: 0;
@@ -40,12 +39,12 @@ x_popup[visible='false'] {
   background: #3CB371;
 }
 
-
 .display {
   align-self: stretch;
   background: #eee;
-  display: block;
-  padding: 25px;
   border-radius: 20px;
+  display: block;
+  overflow: auto;
+  padding: 25px;
   user-select: text;
 }

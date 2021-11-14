@@ -3,14 +3,6 @@
   height: 100%;
 }
 
-@font-face {
- font-family: 'Font';
- src: url('../../Media/font.ttf');
-}
-
-/* x_algebra {
-  background: #0f02;
-} */
 
 c-slider {
   background: url('../../Media/background.jpg');
@@ -21,15 +13,14 @@ c-slider {
 c-screen {
   font-family: 'Font';
   color: #fff;
-  display: grid;
-  align-items: center;
-  text-align: center;
+  height: 100%;
 }
 
 c-popup {
   color: #000;
   z-index: 1;
 }
+
 
 [popup_link] {
   cursor: pointer;
