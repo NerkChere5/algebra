@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Font';
+  src: url('../Media/font.ttf');
+}
+
+
+
+
+:root {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+img {
+  pointer-events: none;
+}

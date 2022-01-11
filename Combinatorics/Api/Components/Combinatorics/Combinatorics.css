@@ -1,0 +1,31 @@
+:host {
+  display: contents;
+  height: 100%;
+}
+
+
+x-slider {
+  background: url('../../../Media/background.jpg');
+  height: 100%;
+  user-select: none;
+}
+
+x-screen {
+  font-family: 'Font';
+  color: #fff;
+  height: 100%;
+}
+
+x-popup {
+  color: #000;
+  z-index: 1;
+}
+
+
+[popup_link] {
+  cursor: pointer;
+}
+
+[popup_link]:hover {
+  color: #ddd;
+}
