@@ -4,19 +4,21 @@ import {Component} from '../../Api/Component.js';
 
 
 class Screen extends Component {
+  _head = null;
   _points = null;
   _popups = null;
   
   
   
-  
   async _build() {
     await super._build();
-    
+     
+    this._head = this._body.querySelector('.head');
     this._points = this._root.querySelectorAll('[popup_link]');
     this._popups = this._root.querySelector('.meta_popups').assignedElements();
     
     this._body.addEventListener('click', this._on_click.bind(this));
+    this._define_head();
   }
   
   
@@ -30,6 +32,12 @@ class Screen extends Component {
     if (!popup) return;
     
     popup.visible = true;
+  }
+  
+  _define_head() {
+    let title = this.getAttribute('head');
+    
+    this._head.textContent = title;
   }
 }
 
