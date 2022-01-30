@@ -1,8 +1,11 @@
+//26.01.2022
+
+
 export class Combinatorics {
-  static _factorial(num) {
+  static _factorial(n) {
     let result = 1n;
 
-    for (let i = 1n; i <= num; i++) {
+    for (let i = 1n; i <= n; i++) {
       result *= i;
     }
     
@@ -12,26 +15,26 @@ export class Combinatorics {
   
   
   
-  static combinations(power, count) {
-    let power_count = this._factorial(power);
-    let count_combination = this._factorial(count);
-    let difference = power - count;
-    let difference_count = this._factorial(difference);
-    let denominator = count_combination * difference_count;
-    let result = power_count / denominator;
+  static combinations(n, k) {
+    let n_factor = this._factorial(n);
+    let k_factor = this._factorial(k);
+    let difference = n - k;
+    let difference_factor = this._factorial(difference);
+    let denominator = k_factor * difference_factor;
+    let result = n_factor / denominator;
     
     return result;
   }
   
   
-  static combinations_repeat(power, count) {
-    let power_repeat = power + count - 1;
-    let power_count = this._factorial(power_repeat);
-    let count_combination = this._factorial(count);
-    let difference = power_repeat - count;
-    let difference_count = this._factorial(difference);
-    let denominator = count_combination * difference_count;
-    let result = power_count / denominator;
+  static combinations_repeat(n, k) {
+    let n_repeat = n + k - 1;
+    let n_factor = this._factorial(n_repeat);
+    let k_factor = this._factorial(k);
+    let difference = n_repeat - k;
+    let difference_factor = this._factorial(difference);
+    let denominator = k_factor * difference_factor;
+    let result = n_factor / denominator;
     
     return result;
   }
@@ -59,38 +62,38 @@ export class Combinatorics {
   }
   
   
-  static permutation(num) {
-    this._factorial(num);
+  static permutation(n) {
+    this._factorial(n);
   }
   
   
   static permutation_repeat() {
-    let power = this._factorial(arguments[0]);
+    let n = this._factorial(arguments[0]);
     let result = 1;
-    let count_repeat = 1;
+    let k_repeat = 1;
     
     for (let i = 1; i < arguments.length; i++) {
-      count_repeat *= this._factorial(arguments[i]);
+      k_repeat *= this._factorial(arguments[i]);
     }
     
-    result = power / count_repeat;
+    result = n / k_repeat;
     
     return result;
   }
   
   
-  static placements(power, count) {
-    let permutation = this._factorial(power);
-    let methods = power - count;
-    let methods_count = this._factorial(methods);
-    let result = permutation / methods_count;
+  static placements(n, k) {
+    let permutation = this._factorial(n);
+    let methods = n - k;
+    let methods_factor = this._factorial(methods);
+    let result = permutation / methods_factor;
     
     return result;
   }
   
   
-  static placements_repeat(power, count) {
-    let result = power ** count;
+  static placements_repeat(n, k) {
+    let result = n ** k;
     
     return result;
   }
