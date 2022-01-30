@@ -1,0 +1,1162 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"getAttribute"
+			],
+			[
+				"p",
+				"png"
+			],
+			[
+				"bo",
+				"border_"
+			],
+			[
+				"popu",
+				"popup_1"
+			],
+			[
+				"pop",
+				"popup_link"
+			],
+			[
+				"s",
+				"style"
+			],
+			[
+				"cl",
+				"class_"
+			],
+			[
+				"c",
+				"classList"
+			],
+			[
+				"if",
+				"if_skip"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"a",
+				"addEventListener"
+			],
+			[
+				"si",
+				"size_"
+			],
+			[
+				"i",
+				"id_"
+			],
+			[
+				"cla",
+				"class_"
+			],
+			[
+				"рациона",
+				"рациональных"
+			],
+			[
+				"scre",
+				"screen_textContent_cavity"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"ht",
+				"html_"
+			],
+			[
+				"_",
+				"_dataOfBirth"
+			],
+			[
+				"he",
+				"help"
+			],
+			[
+				"cs",
+				"class_"
+			],
+			[
+				"co",
+				"content"
+			],
+			[
+				"h",
+				"html_"
+			],
+			[
+				"for",
+				"for"
+			],
+			[
+				"nu",
+				"numberColor"
+			],
+			[
+				"scr",
+				"screenHeight"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"fo",
+				"for"
+			],
+			[
+				"f",
+				"for"
+			],
+			[
+				"drop",
+				"drop_to"
+			],
+			[
+				"d",
+				"drop_to"
+			],
+			[
+				"siz",
+				"size_"
+			],
+			[
+				"dr",
+				"drop_to"
+			],
+			[
+				"b",
+				"border_"
+			],
+			[
+				"id",
+				"id_"
+			],
+			[
+				"bor",
+				"border_"
+			],
+			[
+				"sl",
+				"slide"
+			],
+			[
+				"sli",
+				"slides"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"fun",
+				"function_arrow_"
+			],
+			[
+				"gr",
+				"grid"
+			],
+			[
+				"ca",
+				"calculator__button_number_0"
+			],
+			[
+				"t",
+				"link_style_"
+			],
+			[
+				"cr",
+				"create"
+			],
+			[
+				"m",
+				"meta_charset_"
+			],
+			[
+				"gri",
+				"grid-gap"
+			],
+			[
+				"I",
+				"id_"
+			],
+			[
+				"ob",
+				"object-fit"
+			],
+			[
+				"re",
+				"repeat"
+			],
+			[
+				"C",
+				"class_"
+			],
+			[
+				"cls",
+				"class"
+			],
+			[
+				"me",
+				"media"
+			],
+			[
+				"va",
+				"variable_"
+			],
+			[
+				"v",
+				"variable_"
+			],
+			[
+				"met",
+				"method_"
+			],
+			[
+				"fa",
+				"function_arrow_"
+			],
+			[
+				"elem",
+				"element"
+			],
+			[
+				"an",
+				"answers_reset"
+			],
+			[
+				"anw",
+				"answer"
+			],
+			[
+				"_ac",
+				"_answer_create"
+			],
+			[
+				"_ans",
+				"_answers"
+			],
+			[
+				"ele",
+				"element"
+			],
+			[
+				"ansr",
+				"answer"
+			],
+			[
+				"fua",
+				"function_arrow_x_"
+			],
+			[
+				"lo",
+				"log_"
+			],
+			[
+				"_re",
+				"_request_data"
+			],
+			[
+				"sol",
+				"solve"
+			],
+			[
+				"anr",
+				"answer"
+			],
+			[
+				"url_",
+				"url_user_data"
+			],
+			[
+				"dse",
+				"Deals_se"
+			],
+			[
+				"D",
+				"Deals_sd"
+			],
+			[
+				"sp",
+				"stepPercent"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"is",
+				"inputs"
+			],
+			[
+				"dsed",
+				"data_selected"
+			],
+			[
+				"item_se",
+				"item_selected"
+			],
+			[
+				"_dea",
+				"_deals_results"
+			],
+			[
+				"dp",
+				"data_dbPath"
+			],
+			[
+				"data",
+				"data_select"
+			],
+			[
+				"sql",
+				"sqlite"
+			],
+			[
+				"gh",
+				"graph"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"se",
+				"symbolEdit"
+			],
+			[
+				"li",
+				"symbolList"
+			],
+			[
+				"de",
+				"deal_result"
+			],
+			[
+				"Op",
+				"Optimization_coords_top_base"
+			],
+			[
+				"des",
+				"deals_dates"
+			],
+			[
+				"dpr",
+				"dataProcessor"
+			],
+			[
+				"ded",
+				"deals_dates"
+			],
+			[
+				"dt",
+				"data_row"
+			],
+			[
+				"_bui",
+				"_build"
+			],
+			[
+				"im",
+				"i_max"
+			],
+			[
+				"ros",
+				"row_select"
+			],
+			[
+				"_gri",
+				"_grid_height"
+			],
+			[
+				"cre",
+				"createSvgElement"
+			],
+			[
+				"f__",
+				"function__\tfunction"
+			],
+			[
+				"dbr",
+				"db_record"
+			],
+			[
+				"_tra",
+				"_trade_in_signal"
+			],
+			[
+				"in",
+				"init"
+			],
+			[
+				"inp",
+				"inputs"
+			],
+			[
+				"Ar",
+				"ArrayResize"
+			],
+			[
+				"Aunzd",
+				"spring_AUDNZD"
+			],
+			[
+				"_did",
+				"_dateId"
+			],
+			[
+				"_da",
+				"_data_inputs_names"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"inputs",
+				"inputs"
+			],
+			[
+				"DP",
+				"DatabasePrepare"
+			],
+			[
+				"_data_balance_",
+				"_data_balance_dates"
+			],
+			[
+				"db",
+				"darkblue"
+			],
+			[
+				"po",
+				"prototype"
+			],
+			[
+				"st",
+				"StatsData"
+			],
+			[
+				"bala",
+				"BalanceData"
+			],
+			[
+				"dataVa",
+				"dataValue"
+			],
+			[
+				"sn",
+				"statName"
+			],
+			[
+				"inpu",
+				"inputName"
+			],
+			[
+				"n",
+				"num"
+			],
+			[
+				"nam",
+				"name1"
+			],
+			[
+				"na",
+				"name"
+			],
+			[
+				"_add",
+				"_addBalanceData"
+			],
+			[
+				"_t",
+				"_tableInputsData"
+			],
+			[
+				"fe",
+				"FETCH_NUM"
+			],
+			[
+				"__",
+				"__num"
+			],
+			[
+				"Gr",
+				"GraphPanel"
+			],
+			[
+				"cell",
+				"cells"
+			],
+			[
+				"cn",
+				"contentEditable"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 338,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"insert",
+					{
+						"characters": "body"
+					},
+					"BAAAAHgAAAAAAAAAeQAAAAAAAAAAAAAAeQAAAAAAAAB6AAAAAAAAAAAAAAB6AAAAAAAAAHsAAAAAAAAAAAAAAHsAAAAAAAAAfAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAeAAAAAAAAAB4AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAHwAAAAAAAAAfQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAfAAAAAAAAAB8AAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"a",
+				"Arithmetic"
+			],
+			[
+				"js",
+				"Set Syntax: JS"
+			],
+			[
+				"h",
+				"Set Syntax: HTML"
+			],
+			[
+				"sni",
+				"Snippet: rule"
+			],
+			[
+				"sn",
+				"Snippet: property"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"p",
+				"Set Syntax: PHP"
+			],
+			[
+				"sq",
+				"Set Syntax: SQL"
+			],
+			[
+				"s",
+				"Set Syntax: SQL"
+			],
+			[
+				"sch",
+				"UI: Select Color Scheme"
+			],
+			[
+				"hp",
+				"Set Syntax: PHP"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"",
+				"Arithmetic"
+			],
+			[
+				"re",
+				"Rename File"
+			],
+			[
+				"sb",
+				"Set Syntax: SB"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"ren",
+				"Rename File"
+			],
+			[
+				"ar",
+				"Arithmetic"
+			],
+			[
+				"mql",
+				"Set Syntax: MQL"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"th",
+				"UI: Select Theme"
+			],
+			[
+				"ya",
+				"Set Syntax: YAML"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"xm\t",
+				"Set Syntax: XML"
+			],
+			[
+				"jso\t",
+				"Set Syntax: JSON"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"text",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"yam",
+				"Set Syntax: YAML"
+			],
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"ssa",
+				"Set Syntax: A"
+			],
+			[
+				"plt",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"ssA",
+				"Set Syntax: A"
+			],
+			[
+				"sql\t",
+				"Set Syntax: SQL"
+			],
+			[
+				"te",
+				"Set Syntax: LaTeX Log"
+			],
+			[
+				"txt",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"ssjs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"C#",
+				"Set Syntax: C#"
+			],
+			[
+				"csch",
+				"UI: Select Color Scheme"
+			],
+			[
+				"color",
+				"UI: Select Color Scheme"
+			],
+			[
+				"pc",
+				"Package Control: Install Package"
+			],
+			[
+				"pa in",
+				"Package Control: Install Package"
+			],
+			[
+				"c",
+				"Set Syntax: C"
+			],
+			[
+				"c+",
+				"Set Syntax: C++"
+			],
+			[
+				"cpp",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"cp",
+				"Package Control: List Packages"
+			],
+			[
+				"rv",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"sche",
+				"UI: Select Color Scheme"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"ui",
+				"UI: Select Theme"
+			],
+			[
+				"them",
+				"UI: Select Theme"
+			],
+			[
+				"pv",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"Packager",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"new",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 416.0,
+		"history":
+		[
+			"/?",
+			"?",
+			"help?",
+			"help",
+			"clr()",
+			"clr",
+			"clear"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/B/Files/Web/Sayts/Algebra/index.html",
+		"/B/Files/Web/Sayts/Algebra/dindex.html",
+		"/B/Files/Web/Sayts/Algebra/Polynomials/Components/Algebra/Algebra.html",
+		"/B/Files/Web/Sayts/Algebra/Polynomials/Components/Screen/Screen.html",
+		"/B/Files/Web/Sayts/Algebra/Polynomials/Components/Screen/Screen.js",
+		"/B/Files/Web/Sayts/Algebra/Polynomials/Components/Popup/Popup.js",
+		"/B/Files/Web/Sayts/Algebra/Polynomials/Components/Popup/Popup.css",
+		"/B/Files/Web/Sayts/Algebra/Polynomials/Components/Popup/Popup.html",
+		"/B/Files/Web/Sayts/Algebra/Polynomials/Components/Screen/Screen.css",
+		"/C/Files/Web/Sayts/Algebra/index.html",
+		"/B/Files/Web/Sayts/Algebra/Components/Screen/Screen.html",
+		"/B/Files/Web/Sayts/Algebra/Components/Screen/Screen.js",
+		"/B/Files/Web/Sayts/Algebra/Components/Popup/Popup.js",
+		"/B/Files/Web/Sayts/Algebra/Components/Popup/Popup.css",
+		"/B/Files/Web/Sayts/Algebra/Components/Popup/Popup.html",
+		"/C/Files/Web/Sayts/Algebra/Components/Slider/Slider_x.css",
+		"/C/Files/Web/Sayts/Algebra/Components/Slider/Slider.css",
+		"/C/Files/Web/Sayts/Algebra/Components/Screen/Screen.html",
+		"/C/Files/Web/Sayts/Algebra/Components/Screen/Screen.css",
+		"/C/Files/Web/Sayts/Algebra/Components/Slider/Slider.html",
+		"/C/Files/Web/Sayts/Algebra/Components/Screen/Screen.js",
+		"/C/Files/Web/Sayts/Algebra/Components/Slider/Slider.js",
+		"/C/Files/Web/Sayts/Algebra/Components/Popup/Popup.css",
+		"/C/Files/Web/Sayts/Algebra/Components/Algebra/Algebra.js",
+		"/C/Files/Web/Sayts/Algebra/Components/Algebra/Algebra.css",
+		"/C/Files/Web/Sayts/Algebra/Main/Main.css",
+		"/C/Files/Web/Sayts/Algebra/Main/Main.js",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/Algebra/Main/Main.css",
+		"/C/Files/Web/Sayts/Algebra/!/algebra-main/index.html",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/Algebra/Components/Algebra/Algebra.html",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/Algebra/Components/Algebra/Algebra.js",
+		"/C/Files/Web/Sayts/Algebra/Media/font.css",
+		"/C/Files/Web/Apps/Components/01-cards-sources/styles.css",
+		"/C/Files/Web/Sayts/Algebra/!/algebra-main/style.css",
+		"/E/FirefoxPortable/dance.css",
+		"/C/Files/Web/Sayts/Chity.ru/mein.html",
+		"/C/Files/Web/Sayts/Chity.ru/style.css",
+		"/C/Files/Web/Sayts/Agrest/desktop.html",
+		"/C/Files/Web/Sayts/Main/products.html",
+		"/C/Files/Web/Sayts/Algebra/.gitignore",
+		"/C/Files/Web/Sayts/Algebra/style.css",
+		"/C/Files/Web/Sayts/Algebra/app.js",
+		"/C/Files/Web/Games/05-aim-game-sources/app.js",
+		"/C/Files/Web/Games/05-aim-game-sources/styles.css",
+		"/C/Files/Web/Apps/Components/02-drag-n-drop-sources/app.js",
+		"/C/Files/Web/Apps/Components/01-cards-sources/app.js",
+		"/C/Files/Web/Games/05-aim-game-sources/index.html",
+		"/C/Files/Web/Sayts/Chity.ru2/main.html",
+		"/C/Files/Web/Sayts/Chity.ru2/modules/styles/main.css",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/PresentationInThePerfomance.html",
+		"/C/Files/Web/Apps/HomeworkSolver/SkysmartSolver.js",
+		"/C/Files/Web/Sayts/Chity.ru2/modules/scripts/main.js",
+		"/C/Files/Web/Apps/Components/Slider/Slider.js",
+		"/C/WPI_BELOFF_Log.txt",
+		"/C/Files/Web/Games/Tank-2/Tank.js",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/Histore.txt",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/activiteOffice_365.cmd",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/office365/Новый текстовый документ.txt",
+		"/C/Program instal/skript.js",
+		"/C/Files/Web/Games/Tank-2/index.html",
+		"/C/Files/Web/Test/Theme.js",
+		"/C/Files/Web/SB/Test2/test2.sb",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/rufus.ini",
+		"/E/autorun.inf",
+		"/C/Files/Web/Sayts/Earth/index.html",
+		"/C/Files/Web/Sayts/Earth/modules/ship/ship.css",
+		"/C/Files/Web/Sayts/Earth/style.css",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/Книга 1.txt",
+		"/C/apps/Xampp/htdocs/Web/Games/Tank/tank.js",
+		"/C/apps/Xampp/htdocs/Web/Games/05-aim-game-sources/app.js",
+		"/C/apps/Xampp/htdocs/Web/Games/Tank/tank.html",
+		"/C/apps/Xampp/htdocs/Web/Games/tank.js",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/README.md",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/Classes/Solver_drop.js",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/Путь.txt",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/Api/Network.js",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/Classes/Solver_text.js",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/Classes/Solver_test_images.js",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/Classes/Solver_test.js",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/Classes/Solver_strike.js",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/Classes/Solver_math.js",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/Classes/Solver_match.js",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/Classes/Solver_drop_groups.js",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/Classes/Solver.js",
+		"/C/apps/Xampp/htdocs/Web/Apps/HomeworkSolver/Api/Network.js",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/SkysmartSolver.js",
+		"/C/apps/Xampp/htdocs/Web/Apps/HomeworkSolver/Classes/Solver_select.js",
+		"/C/apps/Xampp/htdocs/Web/Apps/HomeworkSolver/Classes/Solver_text.js",
+		"/C/apps/Xampp/htdocs/Web/Apps/HomeworkSolver/Classes/Solver_strike.js",
+		"/C/apps/Xampp/htdocs/Web/Apps/HomeworkSolver/Classes/Solver_drop_groups.js",
+		"/C/apps/Xampp/htdocs/Web/Apps/HomeworkSolver/Classes/Solver_math.js",
+		"/C/apps/Xampp/htdocs/Web/Apps/HomeworkSolver/Classes/Solver.js",
+		"/C/apps/Xampp/htdocs/Web/Test/Гипотеза Коллатца/math.js",
+		"/C/apps/Xampp/htdocs/Web/Test/drop/drop.html",
+		"/C/apps/Xampp/htdocs/Web/Test/drop/drop.css",
+		"/C/apps/Xampp/htdocs/Web/Test/drop/drop.js",
+		"/C/apps/Xampp/htdocs/Web/Apps/Components/02-drag-n-drop-sources/app.js",
+		"/C/apps/Xampp/htdocs/Web/Apps/Components/02-drag-n-drop-sources/styles.css",
+		"/C/apps/Xampp/htdocs/Web/Apps/Components/02-drag-n-drop-sources/index.html",
+		"/C/apps/Xampp/htdocs/Web/Apps/Components/Slider/Slider.css",
+		"/C/apps/Xampp/htdocs/Web/Apps/Components/Slider/Slider.js",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/02-drag-n-drop-sources/app.js",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/02-drag-n-drop-sources/styles.css",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/02-drag-n-drop-sources/index.html",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/01-cards-sources/index.html",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/01-cards-sources/styles.css",
+		"/C/Users/nkosc/OneDrive/Рабочий стол/01-cards-sources/app.js",
+		"/C/apps/Xampp/htdocs/Web/Test/Гипотеза Коллатца/math.htm",
+		"/C/apps/Xampp/htdocs/Web/Test/math.htm",
+		"/C/apps/Xampp/htdocs/Web/Test/math.js",
+		"/C/apps/Xampp/htdocs/Web/Apps/Calculataor/calculator.js",
+		"/C/apps/Xampp/htdocs/Web/Test/3x+1.js",
+		"/C/apps/Xampp/htdocs/Web/Test/3x+1.json",
+		"/C/apps/Xampp/htdocs/Web/Apps/Calculataor/index.html",
+		"/C/apps/Xampp/htdocs/Web/Apps/Calculataor/style.css",
+		"/C/apps/Xampp/htdocs/Web/Apps/Calculataor/calculator3.js",
+		"/C/apps/Xampp/htdocs/Web/Apps/Calculataor/calculator2.js",
+		"/C/apps/Xampp/htdocs/Web/Test/culculator.js",
+		"/C/apps/Xampp/htdocs/Web/Test/culculator.css",
+		"/C/apps/Xampp/htdocs/Web/Test/culculator.html",
+		"/C/apps/Xampp/htdocs/Web/Apps/Notation/notation.html",
+		"/C/apps/Xampp/htdocs/Web/Apps/Notation/notation.js",
+		"/C/apps/Xampp/htdocs/Web/Sayts/Chity.ru/mein.html",
+		"/C/apps/Xampp/htdocs/Web/Sayts/GrigoriyPsarev/js.js",
+		"/C/apps/Xampp/htdocs/Web/Apps/Calculataor/Новый текстовый документ.txt",
+		"/B/новый год/6а/Классный уголок от департамента образования/Klassnyi_774_ugolok_razmer_A1.pdf",
+		"/C/apps/Xampp/htdocs/Web/Test/composition.js",
+		"/B/пайтон/test 1.py"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 112.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"<c-screen>",
+			"c-screen",
+			"<c-screen>",
+			"jpg",
+			"-",
+			"sub",
+			"h1",
+			"p",
+			"h1",
+			"mousdown",
+			"variable",
+			"value",
+			"att",
+			"Cursive",
+			"counter",
+			"i + 1",
+			"name",
+			"tank_1",
+			"help",
+			" ",
+			",",
+			"комбинированный",
+			"§",
+			"§ 1",
+			" ",
+			"tank_element.",
+			"math-input",
+			"Миша",
+			"let",
+			"placeholder",
+			"span",
+			"function_",
+			"value",
+			"\"",
+			"function",
+			"return",
+			"calculator__button_operation_exponentiation",
+			"let",
+			"querySelector",
+			"value",
+			"dash\n",
+			"htd",
+			"Protect",
+			"00",
+			"0",
+			"ms",
+			"ms\n",
+			"translate",
+			"-100%, 0"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 338,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								125,
+								125
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Html/Html.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 210.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 210.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Files\\Web\\Sayts\\Algebra\\algebra.sublime-workspace"
+			]
+		],
+		"width": 411.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 252.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

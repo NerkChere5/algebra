@@ -1,0 +1,129 @@
+* {
+  color: black;
+  font: 16px 'Arial';
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: url('https://phonoteka.org/uploads/posts/2021-04/1619680326_8-phonoteka_org-p-fon-dlya-khtml-8.jpg') no-repeat;
+  margin: 0px;
+  padding: 0;
+}
+
+c-slider {
+  --arrow_color: #afaa;
+  --point_color: #faaa;
+  height: 60vh;
+  margin: 50px auto auto auto;
+  position: relative;
+  width: 90vw;
+}
+
+c-slider img {
+  object-fit: contain;
+}
+
+.contents {
+  margin-bottom: 50px; 
+}
+
+footer {
+  background: black;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  right: 0;
+}
+
+header {
+  align-items: center;
+  background: #89a9;
+  bottom: 0;
+  display: grid;
+  grid-template: 1fr / repeat(4, 1fr);
+  justify-items: center;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.image_favicon {
+  height: 40px;
+  width: 90px;
+}
+
+.menu {
+  font-weight: bold;
+ }
+ 
+.menu:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.p {
+  padding: 15px;
+  margin: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+#RunningLine {
+  -webkit-animation: RunningLine 18s infinite linear;
+  animation: RunningLine 18s infinite linear;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  padding-left: 100%;
+}
+
+.RunningLine {
+  overflow: hidden;
+  white-space: nowrap;
+}
+ 
+#RunningLine:hover {
+  color: yellow;
+  cursor: pointer;
+ }
+ 
+ .selectProducts {
+   display: grid;
+   grid-template: repeat(3, 400px) / repeat(3, 300px);
+   margin: auto;
+   grid-gap: 50px;
+   justify-items: center;
+ }
+ 
+ .cost::after {
+   content: ' $';
+ }
+ 
+ .picture {
+   object-fit: contain;
+   height: 90%;
+   width: 90%;
+ }
+ 
+ #body {
+   display: grid;
+   grid-template: repeat(3, auto) / auto;
+   grid-gap: 20px;
+ }
+ 
+ 
+ 
+ 
+@-webkit-keyframes RunningLine {
+  0%{-webkit-transform: translate(0, 0);}
+  100%{-webkit-transform: translate(-100%, 0);}
+}
+@keyframes RunningLine{
+  0%{transform: translate(0, 0);}
+  100%{transform: translate(-100%, 0)}
+}

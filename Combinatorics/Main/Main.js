@@ -1,4 +1,4 @@
-import '../Api/Components/Combinatorics/Combinatorics.js';
+import '../Api/Components/Combinatorics/Combinatorics_x.js';
 
 
 
