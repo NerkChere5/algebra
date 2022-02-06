@@ -29,3 +29,21 @@ x-popup {
 [popup_link]:hover {
   color: #ddd;
 }
+
+.reader {
+  border-bottom: 1px solid #000;
+  display: inline;
+}
+
+.subscript {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(2, auto);
+  width: 30px;
+  font-family: 'Cambria Math';
+  font-style: italic;
+}
+
+.letter {
+  grid-row: 1 / -1;
+  font-size: xx-large;
+}

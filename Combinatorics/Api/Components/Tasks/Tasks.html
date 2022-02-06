@@ -13,6 +13,7 @@
       <div>г. Семилуки, <span style='display: inline-block; width: 5px;'></span> 2022 год</div>
     </x-screen>
     
+    
     <x-screen head='Начало'>
       <div>Давайте ознакомимся с тренажёром</div>
       <ol>
@@ -25,10 +26,52 @@
       </ol>
     </x-screen>
     
+    
     <x-screen head='Task_1'>
-      <div>Переставьте <span class='task'></span></div>
+      <div>Переставьте A<span class='task'></span><span class='task'></span></div>
       <input>
-      <button>Проверить!</button>
+      
+      <div hidden class='mark_true'>Всё верно! Переходи к выполнению следующего задания.</div>
+      <div hidden class='mark_error'>Неверно! Попробуй ещё раз.</div>
+      
+      <button class='show_solve' hidden popup_link='solve_1'>Показать решение</button>
+      
+      <x-popup class='content_solve' popup_name='solve_1' slot='popups'>
+        <ol>
+          <li>Опредилим тип задачи</li>
+          <li>Т. к. что-то, то это что-то</li>
+          <li>Вспомним формулу <img src='#'></li>
+          <li>Подставим числа в формулу и посчитаем результат:
+            <span class='subscript'>
+              <span class='letter'></span>
+              <span class='count'></span>
+               <span class='total'></span>
+            </span>
+            
+            <span>
+              <div class='reader'></div>
+              <div class='denominator'></div>
+            </span>
+          </li>
+          <li>Запишем ответ: <span class='answer'></span></li>
+        </ol>
+      </x-popup>
+      
+      <button class='check_btn'>Проверить!</button>
+    </x-screen>
+    
+    
+    <x-screen head='Task_2'>
+      <div>Переставьте C<span class='task'id='task_3'></span></div>
+      <input>
+      <div hidden class='mark_true'>Всё верно! Переходи к выполнению следующего задания.</div>
+      <div hidden class='mark_error'>Неверно! Попробуй ещё раз.</div>
+      <button class='show_solve' hidden popup_link='solve_2'>Показать решение</button>
+      <x-popup class='content_solve' popup_name='solve_2' slot='popups'>
+        
+        
+      </x-popup>
+      <button class='check_btn'>Проверить!</button>
     </x-screen>
   </x-slider>
 </x_body>
