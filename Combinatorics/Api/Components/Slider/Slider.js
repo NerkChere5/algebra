@@ -15,7 +15,7 @@ class Slider extends Component {
   _meta_points = null;
   _point = null;
   _timer = null;
-  _tasks = document.querySelector('x-tasks');
+  tasks = document.querySelector('x-tasks');
   
   
   
@@ -56,11 +56,11 @@ class Slider extends Component {
     slot.addEventListener('animationend', this._on_animationend__item.bind(this));
     this._arrows[0].addEventListener('pointerdown', () => {
         this.item_num--;
-        this._tasks.defined_screen(this.item_num);
+        this.tasks.main(this.item_num);
       });
     this._arrows[1].addEventListener('pointerdown', () => {
         this.item_num++;
-        this._tasks.defined_screen(this.item_num);
+        this.tasks.main(this.item_num);
       });
     this._meta_points.addEventListener('pointerdown', this._on_pointerdown__meta_points.bind(this));
     

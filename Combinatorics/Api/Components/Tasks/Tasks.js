@@ -10,9 +10,8 @@ import {Component} from '../Component.js';
 
 
 export class Tasks extends Component {
-  // _screen_num = 0;
   _answers = null;
-  _buttons = null;
+  _check_buttons = null;
   _count_errors = 0;
   _mark_repeat = null;
   _mark_true = null;
@@ -25,22 +24,25 @@ export class Tasks extends Component {
   
   
   
-  
   async _build() {
     await super._build();
     
     this._check_buttons = this._body.querySelectorAll('.check_btn');
     this._mark_repeat = this._body.querySelectorAll('.mark_error');
     this._mark_true = this._body.querySelectorAll('.mark_true');
-    this._tasks = this._body.querySelectorAll('.task');
     this._solve_button = this._body.querySelectorAll('.show_solve');
     this._solve_content = this._body.querySelectorAll('.content_solve');
     
     
     this._check_buttons[0].addEventListener('click', () => {
         this._answers = this._body.querySelectorAll('input');
-        this._check_answer(this._task, this._answers[0].value, 'placements');
-      });
+        this._check_answer(this._task, this._answers[this._task_num].value, 'placements');
+    });
+    
+    this._check_buttons[1].addEventListener('click', () => {
+        this._answers = this._body.querySelectorAll('input');
+        this._check_answer(this._task, this._answers[this._task_num].value, 'combinations');
+    });
   }
   
   
@@ -75,7 +77,6 @@ export class Tasks extends Component {
     if (type == 'placements') {
       let _result_true = Combinatorics.placements(conditions[0], conditions[1]);
       
-      console.log(_result_true)
       if (_answers_user == _result_true) {
           this._count_errors = 0;
           this._markMade_show_true();
@@ -83,7 +84,17 @@ export class Tasks extends Component {
       } else {
           this._answer_false(conditions, type);
         }
-    } else if (type == 'placements_repeat') {}
+    } else if (type == 'combinations') {
+      let _result_true = Combinatorics.combinations(conditions[0], conditions[1]);
+      
+      if (_answers_user == _result_true) {
+          this._count_errors = 0;
+          this._markMade_show_true();
+          this._show_solve(conditions, type)
+      } else {
+          this._answer_false(conditions, type);
+        }
+    }
   }
   
   
@@ -91,7 +102,7 @@ export class Tasks extends Component {
     this._count_errors++;
     if (this._count_errors == 1) {
       this._markMade_show_false();
-    } else if (this._count_errors > 1) {
+    } else if (this._count_errors > 2) {
       this._show_solve(conditions, type);
     }
   }
@@ -141,27 +152,81 @@ export class Tasks extends Component {
       denominator.textContent = denominator_content;
       answer[0].textContent = answer_content;
       answer[1].textContent = answer_content;
-    } else if (type == '') {}
+    } else if (type == 'combinations') {
+      let total_content = conditions[0];
+      let count_content = conditions[1];
+      
+      let reader_content = `${conditions[0]}!`;
+      let denominator_content = `${conditions[1]}!(${conditions[0]} - ${conditions[1]})!`;
+      let answer_content = Combinatorics.combinations(conditions[0], conditions[1]);
+      
+      let total = this._solve_content[this._task_num].querySelector('.total');
+      let count = this._solve_content[this._task_num].querySelector('.count');
+      let reader = this._solve_content[this._task_num].querySelector('.reader');
+      let denominator = this._solve_content[this._task_num].querySelector('.denominator');
+      let answer = this._solve_content[this._task_num].querySelectorAll('.answer');
+      
+      total.textContent = total_content;
+      count.textContent = count_content;
+      reader.textContent = reader_content;
+      denominator.textContent = denominator_content;
+      answer[0].textContent = answer_content;
+      answer[1].textContent = answer_content;
+      
+    }
   }
   
   
   _clear_answer() {
+  //   for (let i = 0; i < this._answers.length; i++) {
+  //     this._answers[i].value = '';
+  //   }
     
+    for (let i = 0; i < this._task_num; i++) {
+      if (this._mark_repeat[i].hasAttribute('hidden') == false) {
+        this._mark_repeat[i].setAttribute('hidden', 'true');
+      }
+      
+      if (this._mark_true[i].hasAttribute('hidden') == false) {
+        this._mark_true[i].setAttribute('hidden', 'true');
+      }
+      
+      if (this._solve_button[i].hasAttribute('hidden') == false) {
+        this._solve_button[i].setAttribute('hidden', 'true');
+      }
+    }
+    
+    
+    this._answers = null;
+    this._count_errors = 0;
+    this._task = null;
+    this._task_num = 0;
+    this._tasks = null;
   }
   
   
   
-  
-  defined_screen(item_num) {
+  main(item_num) {
+    this._clear_answer();
+    
+    
     this._task_num = item_num - 2;
     
-    if (item_num == 2) {
+    let screen = this._body.querySelectorAll('x-screen');
+    
+    this._tasks = screen[item_num].querySelectorAll('.task');
+    
+    this.defined_screen();
+  }
+  
+  
+  defined_screen() {
+    if (this._task_num == 0) {
       this._task = this._create_task_1();
-      
-      this._clear_answer();
-      
-    } else if (item_num == 3) {
-      alert('!')
+    } else if (this._task_num == 1) {
+      this._task = this._create_task_1();
+    } else if (this._task_num == 2) {
+      this._task = this._create_task_1();
     }
   }
 }
