@@ -172,7 +172,6 @@ export class Tasks extends Component {
       denominator.textContent = denominator_content;
       answer[0].textContent = answer_content;
       answer[1].textContent = answer_content;
-      
     }
   }
   
@@ -216,11 +215,11 @@ export class Tasks extends Component {
     
     this._tasks = screen[item_num].querySelectorAll('.task');
     
-    this.defined_screen();
+    this.defined_task();
   }
   
   
-  defined_screen() {
+  defined_task() {
     if (this._task_num == 0) {
       this._task = this._create_task_1();
     } else if (this._task_num == 1) {
