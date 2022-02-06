@@ -29,12 +29,18 @@ export class Tasks extends Component {
   async _build() {
     await super._build();
     
-    this._buttons = this._body.querySelectorAll('.check_btn');
+    this._check_buttons = this._body.querySelectorAll('.check_btn');
     this._mark_repeat = this._body.querySelectorAll('.mark_error');
     this._mark_true = this._body.querySelectorAll('.mark_true');
     this._tasks = this._body.querySelectorAll('.task');
     this._solve_button = this._body.querySelectorAll('.show_solve');
     this._solve_content = this._body.querySelectorAll('.content_solve');
+    
+    
+    this._check_buttons[0].addEventListener('click', () => {
+        this._answers = this._body.querySelectorAll('input');
+        this._check_answer(this._task, this._answers[0].value, 'placements');
+      });
   }
   
   
@@ -68,9 +74,12 @@ export class Tasks extends Component {
   _check_answer(conditions, _answers_user, type) {
     if (type == 'placements') {
       let _result_true = Combinatorics.placements(conditions[0], conditions[1]);
+      
+      console.log(_result_true)
       if (_answers_user == _result_true) {
           this._count_errors = 0;
           this._markMade_show_true();
+          this._show_solve(conditions, type)
       } else {
           this._answer_false(conditions, type);
         }
@@ -89,6 +98,12 @@ export class Tasks extends Component {
   
   
   _markMade_show_true() {
+    if (this._mark_repeat[this._task_num].hasAttribute('hidden') == false) {
+      this._mark_repeat[this._task_num].setAttribute('hidden', 'true');
+    }
+    
+    this._check_buttons[this._task_num].setAttribute('hidden', 'true');
+    
     this._mark_true[this._task_num].removeAttribute('hidden');
   }
   
@@ -101,13 +116,37 @@ export class Tasks extends Component {
   
   _show_solve(conditions, type) {
     this._create_solve(conditions, type);
+    this._solve_button[this._task_num].removeAttribute('hidden');
   }
   
   
   _create_solve(conditions, type) {
     if (type == 'placements') {
+      let total_content = conditions[0];
+      let count_content = conditions[1];
       
+      let reader_content = `${conditions[0]}!`;
+      let denominator_content = `(${conditions[0]} - ${conditions[1]})!`;
+      let answer_content = Combinatorics.placements(conditions[0], conditions[1]);
+      
+      let total = this._solve_content[this._task_num].querySelector('.total');
+      let count = this._solve_content[this._task_num].querySelector('.count');
+      let reader = this._solve_content[this._task_num].querySelector('.reader');
+      let denominator = this._solve_content[this._task_num].querySelector('.denominator');
+      let answer = this._solve_content[this._task_num].querySelectorAll('.answer');
+      
+      total.textContent = total_content;
+      count.textContent = count_content;
+      reader.textContent = reader_content;
+      denominator.textContent = denominator_content;
+      answer[0].textContent = answer_content;
+      answer[1].textContent = answer_content;
     } else if (type == '') {}
+  }
+  
+  
+  _clear_answer() {
+    
   }
   
   
@@ -119,10 +158,8 @@ export class Tasks extends Component {
     if (item_num == 2) {
       this._task = this._create_task_1();
       
-      this._buttons[0].addEventListener('click', () => {
-        this._answers = this._body.querySelectorAll('input');
-        this._check_answer(this._task, this._answers[0], 'placements')
-      });
+      this._clear_answer();
+      
     } else if (item_num == 3) {
       alert('!')
     }
