@@ -239,6 +239,10 @@ export class Tasks extends Component {
       if (this._solve_button[i].hasAttribute('hidden') == false) {
         this._solve_button[i].setAttribute('hidden', 'true');
       }
+      
+      if (this._check_buttons[i].hasAttribute('hidden') == true) {
+        this._check_buttons[i].removeAttribute('hidden');
+      }
     }
     
     this._answers = null;
