@@ -28,8 +28,8 @@
     
     
     <x-screen head='Упражнение 1'>
-      <div>Переставьте A<span class='task'></span><span class='task'></span></div>
-      <input>
+      <div> Из <span class='task'></span> стаканов сока Иван решил последовательно выпить <span class='task'></span>. Сколько вариантов есть у Ивана?</div>
+      <span>Ответ:</span><input style='margin-left: 20px;'>
       
       <div hidden class='mark_true'>Всё верно! Переходи к выполнению следующего задания.</div>
       <div hidden class='mark_error'>Неверно! Попробуй ещё раз.</div>
@@ -70,8 +70,8 @@
     
     
     <x-screen head='Упражнение 2'>
-      <div>Переставьте C<span class='task'></span><span class='task'></span></div>
-      <input>
+      <div>Сколькими способами можно распределить <span class='task'></span> путевки в один санаторий между <span class='task'></span> желающими?</div>
+      <span>Ответ:</span><input style='margin-left: 20px;'>
       
       <div hidden class='mark_true'>Всё верно! Переходи к выполнению следующего задания.</div>
       <div hidden class='mark_error'>Неверно! Попробуй ещё раз.</div>
@@ -112,8 +112,8 @@
     
     
     <x-screen head='Упражнение 3'>
-      <div>Переставьте A'<span class='task'></span><span class='task'></span></div>
-      <input>
+      <div>В неком секретном коде <span class='task'></span> знаков, известно что для его составления использовали <span class='task'></span> символов. Сколько вариантов такого кода суествует? Символы могут повторяться.</div>
+      <span>Ответ:</span><input style='margin-left: 20px;'>
       
       <div hidden class='mark_true'>Всё верно! Переходи к выполнению следующего задания.</div>
       <div hidden class='mark_error'>Неверно! Попробуй ещё раз.</div>
@@ -136,6 +136,48 @@
               <div class='symbol'>=</div>
                           
               <div class='symbol'><span class='footing'></span><sup class='degree'></sup></div>
+  
+              <div class='symbol'>=</div>
+  
+              <div class='symbol answer'></div>
+            </span>
+          </li>
+          <li>Запишем ответ: <span style='width: 10px; display: inline-block'></span> <span class='answer'></span> </li>
+        </ol>
+      </x-popup>
+      
+      <button class='check_btn'>Проверить!</button>
+    </x-screen>
+    
+    
+    <x-screen head='Упражнение 4'>
+      <div>В почтовом отделении продаются открытки <span class='task'></span> сортов. Сколькими способами можно купить в нем <span class='task'></span> открыток?</div>
+      <span>Ответ:</span><input style='margin-left: 20px;'>
+      
+      <div hidden class='mark_true'>Всё верно! Переходи к выполнению следующего задания.</div>
+      <div hidden class='mark_error'>Неверно! Попробуй ещё раз.</div>
+      
+      <button class='show_solve' hidden popup_link='solve_1'>Показать решение</button>
+      
+      <x-popup class='content_solve' popup_name='solve_1' slot='popups'>
+        <ol>
+          <li>Опредилим тип задачи</li>
+          <li>Т. к. что-то, то это что-то</li>
+          <li>Вспомним формулу <img src='#'></li>
+          <li>Подставим числа в формулу и посчитаем результат:
+            <span class='formula'>
+              <div class='subscript'>
+                <span class='letter'>C'</span>
+                <span class='count'></span>
+                <span class='total'></span>
+              </div>
+  
+              <div class='symbol'>=</div>
+                          
+              <div>
+                <div class='reader'></div>
+                <div class='denominator'></div>
+              </div>
   
               <div class='symbol'>=</div>
   

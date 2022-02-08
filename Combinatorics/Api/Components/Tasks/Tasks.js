@@ -48,6 +48,11 @@ export class Tasks extends Component {
         this._answers = this._body.querySelectorAll('input');
         this._check_answer(this._task, this._answers[this._task_num].value, 'placements_repeat');
     });
+    
+    this._check_buttons[3].addEventListener('click', () => {
+        this._answers = this._body.querySelectorAll('input');
+        this._check_answer(this._task, this._answers[this._task_num].value, 'combinations_repeat');
+    });
   }
   
   
@@ -114,6 +119,16 @@ export class Tasks extends Component {
         }
     } else if (type == 'placements_repeat') {
       let _result_true = Combinatorics.placements_repeat(conditions[0], conditions[1]);
+      
+      if (_answers_user == _result_true) {
+          this._count_errors = 0;
+          this._markMade_show_true();
+          this._show_solve(conditions, type)
+      } else {
+          this._answer_false(conditions, type);
+        }
+    } else if (type == 'combinations_repeat') {
+      let _result_true = Combinatorics.combinations_repeat(conditions[0], conditions[1]);
       
       if (_answers_user == _result_true) {
           this._count_errors = 0;
@@ -200,6 +215,26 @@ export class Tasks extends Component {
       denominator.textContent = denominator_content;
       answer[0].textContent = answer_content;
       answer[1].textContent = answer_content;
+    } else if (type == 'combinations_repeat') {
+      let total_content = `${conditions[0]}+${conditions[1]}-1`;
+      let count_content = conditions[1];
+      
+      let reader_content = `${conditions[0] + conditions[1] - 1}!`;
+      let denominator_content = `${conditions[1]}!(${conditions[0] + conditions[1] - 1} - ${conditions[1]})!`;
+      let answer_content = Combinatorics.combinations_repeat(conditions[0], conditions[1]);
+      
+      let total = this._solve_content[this._task_num].querySelector('.total');
+      let count = this._solve_content[this._task_num].querySelector('.count');
+      let reader = this._solve_content[this._task_num].querySelector('.reader');
+      let denominator = this._solve_content[this._task_num].querySelector('.denominator');
+      let answer = this._solve_content[this._task_num].querySelectorAll('.answer');
+      
+      total.textContent = total_content;
+      count.textContent = count_content;
+      reader.textContent = reader_content;
+      denominator.textContent = denominator_content;
+      answer[0].textContent = answer_content;
+      answer[1].textContent = answer_content;
     } else if (type == 'placements_repeat') {
       let total_content = conditions[0];
       let count_content = conditions[1];
@@ -270,11 +305,9 @@ export class Tasks extends Component {
   
   
   defined_task() {
-    if (this._task_num == 0) {
+    if (this._task_num == 0 || this._task_num == 1) {
       this._task = this._create_task_1();
-    } else if (this._task_num == 1) {
-      this._task = this._create_task_1();
-    } else if (this._task_num == 2) {
+    } else if (this._task_num == 2 || this._task_num == 3) {
       this._task = this._create_task_2();
     }
   }
