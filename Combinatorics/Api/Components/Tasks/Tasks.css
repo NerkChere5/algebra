@@ -11,8 +11,8 @@ x-slider {
 }
 
 x-screen {
-  font-family: 'Font';
   color: #fff;
+  font-family: 'Font';
   height: 100%;
 }
 
@@ -37,9 +37,9 @@ x-popup {
 
 .subscript {
   display: grid;
+  font-style: italic;
   grid-template: repeat(2, auto) / repeat(2, auto);
   width: 30px;
-  font-style: italic;
 }
 
 .subscript_x {
@@ -47,8 +47,8 @@ x-popup {
 }
 
 .letter {
-  grid-row: 1 / -1;
   font-size: xx-large;
+  grid-row: 1 / -1;
 }
 
 .formula {
@@ -71,7 +71,12 @@ x-popup {
 
 .show_solve {
   background: orange;
-  border: none;
+  border: 2px solid orange;
+  color: #290e4e;
+}
+
+.show_solve:active {
+  border: 2px solid #704609;
 }
 
 input {
@@ -80,8 +85,7 @@ input {
   border: 2px dashed #000;
   color: #fff;
   font: 22px 'Font';
-  margin-left: 20px;
-  margin-top: 20px;
+  margin: 20px;
   outline: none;
   padding: 10px;
 }
@@ -95,10 +99,34 @@ input:focus {
 }
 
 button {
-  outline: none;
+  border-radius: 10px;
   border: none;
+  font: 20px 'Font';
+  font-weight: 600;
+  margin: 20px;
+  outline: none;
+  padding: 10px;
 }
 
 button:hover {
   cursor: pointer;
+}
+
+.check_btn {
+  background: border-box;
+  color: #faa;
+  text-decoration: underline #f56161c7;
+}
+
+.check_btn:hover {
+  text-decoration: underline #ddd;
+}
+
+.check_btn:active {
+  color: #edbad1e0;
+  text-decoration: underline #ddd;
+}
+
+.mark_true, .mark_error {
+  font-weight: 600;
 }
