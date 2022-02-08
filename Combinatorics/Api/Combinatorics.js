@@ -63,14 +63,16 @@ export class Combinatorics {
   
   
   static permutation(n) {
-    this._factorial(n);
+    let result = this._factorial(n);
+    
+    return result;
   }
   
   
   static permutation_repeat() {
     let n = this._factorial(arguments[0]);
     let result = 1;
-    let k_repeat = 1;
+    let k_repeat = 1n;
     
     for (let i = 1; i < arguments.length; i++) {
       k_repeat *= this._factorial(arguments[i]);

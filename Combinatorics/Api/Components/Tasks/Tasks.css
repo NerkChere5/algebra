@@ -42,6 +42,10 @@ x-popup {
   font-style: italic;
 }
 
+.subscript_x {
+  width: 90px;
+}
+
 .letter {
   grid-row: 1 / -1;
   font-size: xx-large;
@@ -68,4 +72,33 @@ x-popup {
 .show_solve {
   background: orange;
   border: none;
+}
+
+input {
+  background: border-box;
+  border-radius: 10px;
+  border: 2px dashed #000;
+  color: #fff;
+  font: 22px 'Font';
+  margin-left: 20px;
+  margin-top: 20px;
+  outline: none;
+  padding: 10px;
+}
+
+input:hover {
+  border: 2px dashed #fff;
+}
+
+input:focus {
+  border: 2px dashed #fff;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
