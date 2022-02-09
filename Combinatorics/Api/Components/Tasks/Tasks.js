@@ -34,34 +34,34 @@ export class Tasks extends Component {
     this._solve_content = this._body.querySelectorAll('.content_solve');
     
     
-    this._check_buttons[0].addEventListener('click', () => {
-        this._answers = this._body.querySelectorAll('input');
-        this._check_answer(this._task, this._answers[this._task_num].value, 'placements');
-    });
-    
-    this._check_buttons[1].addEventListener('click', () => {
-        this._answers = this._body.querySelectorAll('input');
-        this._check_answer(this._task, this._answers[this._task_num].value, 'combinations');
-    });
-    
     this._check_buttons[2].addEventListener('click', () => {
-        this._answers = this._body.querySelectorAll('input');
-        this._check_answer(this._task, this._answers[this._task_num].value, 'placements_repeat');
-    });
-    
-    this._check_buttons[3].addEventListener('click', () => {
-        this._answers = this._body.querySelectorAll('input');
-        this._check_answer(this._task, this._answers[this._task_num].value, 'combinations_repeat');
-    });
-    
-    this._check_buttons[4].addEventListener('click', () => {
         this._answers = this._body.querySelectorAll('input');
         this._check_answer(this._task, this._answers[this._task_num].value, 'permutation');
     });
     
-    this._check_buttons[5].addEventListener('click', () => {
+    this._check_buttons[3].addEventListener('click', () => {
         this._answers = this._body.querySelectorAll('input');
         this._check_answer(this._task, this._answers[this._task_num].value, 'permutation_repeat');
+    });
+    
+    this._check_buttons[4].addEventListener('click', () => {
+        this._answers = this._body.querySelectorAll('input');
+        this._check_answer(this._task, this._answers[this._task_num].value, 'placements');
+    });
+    
+    this._check_buttons[5].addEventListener('click', () => {
+        this._answers = this._body.querySelectorAll('input');
+        this._check_answer(this._task, this._answers[this._task_num].value, 'placements_repeat');
+    });
+    
+    this._check_buttons[6].addEventListener('click', () => {
+        this._answers = this._body.querySelectorAll('input');
+        this._check_answer(this._task, this._answers[this._task_num].value, 'combinations');
+    });
+    
+    this._check_buttons[7].addEventListener('click', () => {
+        this._answers = this._body.querySelectorAll('input');
+        this._check_answer(this._task, this._answers[this._task_num].value, 'combinations_repeat');
     });
   }
   
@@ -386,11 +386,11 @@ export class Tasks extends Component {
   
   
   defined_task() {
-    if (this._task_num == 0 || this._task_num == 1) {
+    if (this._task_num == 4 || this._task_num == 6) {
       this._task = this._create_task_1();
-    } else if (this._task_num == 2 || this._task_num == 3 || this._task_num == 5) {
+    } else if (this._task_num == 5 || this._task_num == 7 || this._task_num == 3) {
       this._task = this._create_task_2();
-    } else if (this._task_num == 4) {
+    } else if (this._task_num == 2) {
       this._task = this._create_task_3();
     }
   }
