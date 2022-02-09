@@ -21,6 +21,7 @@ export class Tasks extends Component {
   _task = null;
   _task_num = 0;
   _tasks = null;
+  // _type_task = '';
   
   
   
@@ -35,35 +36,20 @@ export class Tasks extends Component {
     this._solve_content = this._body.querySelectorAll('.content_solve');
     
     
-    this._check_buttons[2].addEventListener('click', () => {
-      this._answers = this._body.querySelectorAll('input');
-      this._check_answer(this._task, this._answers[this._task_num].value, 'permutation');
-    });
+    this._check_buttons[2].onclick = () => this._check_answer(this._task, 'permutation');
+    this._check_buttons[3].onclick = () => this._check_answer(this._task, 'permutation_repeat');
+    this._check_buttons[4].onclick = () => this._check_answer(this._task, 'placements');
+    this._check_buttons[5].onclick = () => this._check_answer(this._task, 'placements_repeat');
+    this._check_buttons[6].onclick = () => this._check_answer(this._task, 'combinations');
+    this._check_buttons[7].onclick = () => this._check_answer(this._task, 'combinations_repeat');
     
-    this._check_buttons[3].addEventListener('click', () => {
-      this._answers = this._body.querySelectorAll('input');
-      this._check_answer(this._task, this._answers[this._task_num].value, 'permutation_repeat');
-    });
     
-    this._check_buttons[4].addEventListener('click', () => {
-      this._answers = this._body.querySelectorAll('input');
-      this._check_answer(this._task, this._answers[this._task_num].value, 'placements');
-    });
-    
-    this._check_buttons[5].addEventListener('click', () => {
-      this._answers = this._body.querySelectorAll('input');
-      this._check_answer(this._task, this._answers[this._task_num].value, 'placements_repeat');
-    });
-    
-    this._check_buttons[6].addEventListener('click', () => {
-      this._answers = this._body.querySelectorAll('input');
-      this._check_answer(this._task, this._answers[this._task_num].value, 'combinations');
-    });
-    
-    this._check_buttons[7].addEventListener('click', () => {
-      this._answers = this._body.querySelectorAll('input');
-      this._check_answer(this._task, this._answers[this._task_num].value, 'combinations_repeat');
-    });
+    // this._check_buttons[2].addEventListener('click', () => this._check_answer(this._task, 'permutation'));
+    // this._check_buttons[3].addEventListener('click', () => this._check_answer(this._task, 'permutation_repeat'));
+    // this._check_buttons[4].addEventListener('click', () => this._check_answer(this._task, 'placements'));
+    // this._check_buttons[5].addEventListener('click', () => this._check_answer(this._task, 'placements_repeat'));
+    // this._check_buttons[6].addEventListener('click', () => this._check_answer(this._task, 'combinations'));
+    // this._check_buttons[7].addEventListener('click', () => this._check_answer(this._task, 'combinations_repeat'));
   }
   
   
@@ -118,7 +104,7 @@ export class Tasks extends Component {
   }
   
   
-  _check_answer(conditions, _answers_user, type) {
+  _check_answer(conditions, type) {
     if (type == 'permutation_repeat') {
       let n = conditions[0] + conditions[1];
       this._result_true = Combinatorics[type](n, conditions[0], conditions[1]);
@@ -129,6 +115,10 @@ export class Tasks extends Component {
     else {
       this._result_true = Combinatorics[type](conditions[0], conditions[1]);
     }
+    
+    this._answers = this._body.querySelectorAll('input');
+    
+    let _answers_user = this._answers[this._task_num].value;
     
     if (_answers_user == this._result_true) {
       this._count_errors = 0;
