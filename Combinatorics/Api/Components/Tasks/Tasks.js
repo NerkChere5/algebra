@@ -278,11 +278,12 @@ export class Tasks extends Component {
   
   
   _clear_answer() {
-    // for (let i = 0; i <= this._answers.length; i++) {
-    //   this._answers[i].value = '';
-    // }
+    if (!this._answers) return;
     
-    // this._answers[this._task_num].style.borderColor = '#000';
+    for (let answer of this._answers) {
+      answer.value = '';
+      answer.style.borderColor = '#000';
+    }
     
     for (let i = 0; i <= this._task_num; i++) {
       if (this._mark_repeat[i].hasAttribute('hidden') == false) {
@@ -315,7 +316,6 @@ export class Tasks extends Component {
   
   main(item_num) {
     this._clear_answer();
-    
     
     this._task_num = item_num - 2;
     
