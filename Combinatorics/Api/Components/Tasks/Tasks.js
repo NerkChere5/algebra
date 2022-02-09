@@ -155,7 +155,7 @@ export class Tasks extends Component {
   
   
   _markMade_show_true() {
-    if (this._mark_repeat[this._task_num].hasAttribute('hidden') == false) {
+    if (!this._mark_repeat[this._task_num].hasAttribute('hidden')) {
       this._mark_repeat[this._task_num].setAttribute('hidden', 'true');
     }
     
@@ -280,27 +280,19 @@ export class Tasks extends Component {
   _clear_answer() {
     if (!this._answers) return;
     
-    for (let answer of this._answers) {
-      answer.value = '';
-      answer.style.borderColor = '#000';
+    this._answers[this._task_num].value = '';
+    this._answers[this._task_num].style.borderColor = '#000';
+    
+    let marks = [this._mark_repeat, this._mark_true, this._solve_button]
+    
+    for (let mark of marks) {
+      if (!mark[this._task_num].hasAttribute('hidden')) {
+        mark[this._task_num].setAttribute('hidden', 'true');
+      }
     }
     
-    for (let i = 0; i <= this._task_num; i++) {
-      if (this._mark_repeat[i].hasAttribute('hidden') == false) {
-        this._mark_repeat[i].setAttribute('hidden', 'true');
-      }
-      
-      if (this._mark_true[i].hasAttribute('hidden') == false) {
-        this._mark_true[i].setAttribute('hidden', 'true');
-      }
-      
-      if (this._solve_button[i].hasAttribute('hidden') == false) {
-        this._solve_button[i].setAttribute('hidden', 'true');
-      }
-      
-      if (this._check_buttons[i].hasAttribute('hidden') == true) {
-        this._check_buttons[i].removeAttribute('hidden');
-      }
+    if (this._check_buttons[this._task_num].hasAttribute('hidden')) {
+      this._check_buttons[this._task_num].removeAttribute('hidden');
     }
     
     this._answers = null;
