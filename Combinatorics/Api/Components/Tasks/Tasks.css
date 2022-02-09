@@ -130,3 +130,13 @@ button:hover {
 .mark_true, .mark_error {
   font-weight: 600;
 }
+
+.image_formula {
+  height: 25px;
+  pointer-events: none;
+}
+
+.image_formula_x {
+  height: 70px;
+  pointer-events: none;
+}
