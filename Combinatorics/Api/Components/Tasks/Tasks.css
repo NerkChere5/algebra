@@ -140,3 +140,13 @@ button:hover {
   height: 70px;
   pointer-events: none;
 }
+
+.files_download {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(2, auto);
+  justify-items: center;
+}
+
+.icon_download {
+  height: 100px;
+}

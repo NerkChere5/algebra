@@ -200,10 +200,18 @@ export class Tasks extends Component {
   
   _create_solve() {
     if (this._task_num == 0) {
-    
+      let total_content = `${this._task[0]} + ${this._task[1]}`;
+      
+      let total = this._solve_content[this._task_num].querySelector('.total_permutation');
+      
+      total.textContent = total_content;
     }
     else if (this._task_num == 1) {
+      let total_content = `${this._task[0]} * ${this._task[1]}`;
       
+      let total = this._solve_content[this._task_num].querySelector('.total_permutation');
+      
+      total.textContent = total_content;
     }
     else if (this._task_num == 2) {
       let count_content = this._task;
