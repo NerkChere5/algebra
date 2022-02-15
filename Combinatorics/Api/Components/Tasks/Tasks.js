@@ -21,7 +21,6 @@ export class Tasks extends Component {
   _task = null;
   _task_num = 0;
   _tasks = null;
-  // _type_task = '';
   
   
   
@@ -29,22 +28,12 @@ export class Tasks extends Component {
   async _build() {
     await super._build();
     
-    this._check_buttons = this._body.querySelectorAll('.check_btn');
+    // this._check_buttons = this._body.querySelectorAll('.check_btn');
     this._mark_repeat = this._body.querySelectorAll('.mark_error');
     this._mark_true = this._body.querySelectorAll('.mark_true');
     this._solve_button = this._body.querySelectorAll('.show_solve');
     this._solve_content = this._body.querySelectorAll('.content_solve');
-    
-    
-    this._check_buttons[0].onclick = () => this._check_answer();
-    this._check_buttons[1].onclick = () => this._check_answer();
-    this._check_buttons[2].onclick = () => this._check_answer();
-    this._check_buttons[3].onclick = () => this._check_answer();
-    this._check_buttons[4].onclick = () => this._check_answer();
-    this._check_buttons[5].onclick = () => this._check_answer();
-    this._check_buttons[6].onclick = () => this._check_answer();
-    this._check_buttons[7].onclick = () => this._check_answer();
-    
+
     
     // this._check_buttons[0].addEventListener('click', this._check_answer());
     // this._check_buttons[1].addEventListener('click', this._check_answer());
@@ -54,6 +43,15 @@ export class Tasks extends Component {
     // this._check_buttons[5].addEventListener('click', this._check_answer());
     // this._check_buttons[6].addEventListener('click', this._check_answer());
     // this._check_buttons[7].addEventListener('click', this._check_answer());
+    
+    this._body.addEventListener('click', this._on_click.bind(this));
+  }
+  
+  
+  _on_click(event) {
+    if (!event.target.classList.contains('check_btn')) return;
+    
+    this._check_answer();
   }
   
   
