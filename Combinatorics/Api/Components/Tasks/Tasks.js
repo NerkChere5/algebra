@@ -20,8 +20,8 @@ export class Tasks extends Component {
   _solve_button = null;
   _solve_content = null;
   _task = null;
+  _task_integers = null;
   _task_num = 0;
-  _tasks = null;
   
   
   
@@ -55,8 +55,8 @@ export class Tasks extends Component {
   
   
   _create_task_1() {
-    let argument_1 = this._tasks[0];
-    let argument_2 = this._tasks[1];
+    let argument_1 = this._task_integers[0];
+    let argument_2 = this._task_integers[1];
     let k = this._getRandomNum(1, 7);
     let n = this._getRandomNum(1, 7);
     
@@ -76,8 +76,8 @@ export class Tasks extends Component {
   
   
   _create_task_2() {
-    let argument_1 = this._tasks[0];
-    let argument_2 = this._tasks[1];
+    let argument_1 = this._task_integers[0];
+    let argument_2 = this._task_integers[1];
     let k = this._getRandomNum(1, 7);
     let n = this._getRandomNum(1, 7);
     
@@ -89,7 +89,7 @@ export class Tasks extends Component {
   
   
   _create_task_3() {
-    let argument_1 = this._tasks[0];
+    let argument_1 = this._task_integers[0];
     let n = this._getRandomNum(0, 7);
     
     argument_1.textContent = n;
@@ -99,8 +99,8 @@ export class Tasks extends Component {
   
   
   _create_task_4() {
-    let argument_1 = this._tasks[0];
-    let argument_2 = this._tasks[1];
+    let argument_1 = this._task_integers[0];
+    let argument_2 = this._task_integers[1];
     let k = this._getRandomNum(1, 29);
     let n = this._getRandomNum(1, 29);
     
@@ -158,7 +158,7 @@ export class Tasks extends Component {
       
       this._markMade_show_false();
     }
-    else if (this._count_errors > 2) {
+    else if (this._count_errors == 3) {
       this._show_solve();
     }
   }
@@ -211,7 +211,7 @@ export class Tasks extends Component {
     this._result_true = null;
     this._task = null;
     this._task_num = 0;
-    this._tasks = null;
+    this._task_integers = null;
   }
   
   
@@ -224,7 +224,7 @@ export class Tasks extends Component {
     
     let screens = this._body.querySelectorAll('x-screen');
     
-    this._tasks = screens[item_num].querySelectorAll('.task');
+    this._task_integers = screens[item_num].querySelectorAll('.task');
     
     this.defined_task();
   }
