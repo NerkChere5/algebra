@@ -150,3 +150,8 @@ button:hover {
 .icon_download {
   height: 100px;
 }
+
+.conditions * {
+  font-size: 20px;
+  text-align: start;
+}
