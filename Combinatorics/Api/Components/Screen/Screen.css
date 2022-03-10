@@ -9,6 +9,7 @@ x_body {
   display: grid;
   grid-template: auto auto / auto;
   justify-items: center;
+  overflow: auto;
   text-align: center;
 }
 
