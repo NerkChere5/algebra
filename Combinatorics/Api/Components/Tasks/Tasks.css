@@ -12,7 +12,7 @@ x-slider {
 
 x-screen {
   color: #fff;
-  font-family: 'Font';
+  font-family: 'Arial';
   height: 100%;
 }
 
@@ -84,7 +84,7 @@ input {
   border-radius: 10px;
   border: 2px dashed #000;
   color: #fff;
-  font: 22px 'Font';
+  font: 22px 'Arial';
   margin: 20px;
   outline: none;
   padding: 10px;
@@ -101,7 +101,7 @@ input:focus {
 button {
   border-radius: 10px;
   border: none;
-  font: 20px 'Font';
+  font: 20px 'Arial';
   font-weight: 600;
   margin: 20px;
   outline: none;
