@@ -796,6 +796,12 @@
 	},
 	"file_history":
 	[
+		"/D/Web/Python/test1.py",
+		"/C/Users/Admin/Desktop/test1.py",
+		"/C/Users/Admin/Desktop/ййй.py",
+		"/D/DDT/Projects/App_math/Screenshot_20220322-102110_Yandex.jpg",
+		"/D/DDT/Projects/App_math/Screenshot_20220322-102103_Yandex.jpg",
+		"/D/Web/Apps/Math_app/Api/Components/Tasks/Tasks.html",
 		"/D/Web/Sayts/Algebra/Combinatorics/Api/Components/Tasks/Tasks.css",
 		"/D/Web/Sayts/Algebra/Combinatorics/index.html",
 		"/D/Web/Sayts/Algebra/Combinatorics/ServiceWorker/Server.js",
@@ -815,7 +821,6 @@
 		"/D/Web/Sayts/Algebra/Combinatorics/Api/Components/Tasks/Tasks.js",
 		"/D/Web/Sayts/Algebra/Combinatorics/Api/Components/Tasks/Modules/createSolve.js",
 		"/C/Apps/SublimeText/Data/Packages/Default/Default.sublime-keymap",
-		"/C/Users/Admin/Desktop/test1.py",
 		"/D/VDI/Other states/Chity/Events/НПК/2022 год/Для жюри/!/Новый текстовый документ.txt",
 		"/D/Web/Python/test.py",
 		"/D/Web/Sayts/Algebra/Combinatorics/Api/Components/Screen/Screen.css",
@@ -918,12 +923,7 @@
 		"/C/WPI_BELOFF_Log.txt",
 		"/C/Files/Web/Games/Tank-2/Tank.js",
 		"/C/Users/nkosc/OneDrive/Рабочий стол/Histore.txt",
-		"/C/Users/nkosc/OneDrive/Рабочий стол/activiteOffice_365.cmd",
-		"/C/Users/nkosc/OneDrive/Рабочий стол/office365/Новый текстовый документ.txt",
-		"/C/Program instal/skript.js",
-		"/C/Files/Web/Games/Tank-2/index.html",
-		"/C/Files/Web/Test/Theme.js",
-		"/C/Files/Web/SB/Test2/test2.sb"
+		"/C/Users/nkosc/OneDrive/Рабочий стол/activiteOffice_365.cmd"
 	],
 	"find":
 	{
@@ -941,6 +941,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"</li>",
+			"<li>",
 			"type",
 			"con",
 			"_task",
@@ -1103,7 +1105,7 @@
 	"project": "",
 	"replace":
 	{
-		"height": 72.0
+		"height": 54.0
 	},
 	"save_all_on_build": false,
 	"select_file":
